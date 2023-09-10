@@ -1,8 +1,9 @@
 #include <Python.h>
 #include <stdio.h>
 /**
- * print_python_list_info - print python
- * @p: input
+ * print_python_list_info - function to print python list
+ * and it's behaviours
+ * @p: pyobject input
  */
 void print_python_list_info(PyObject *p)
 {
