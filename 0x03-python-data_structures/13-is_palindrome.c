@@ -18,6 +18,7 @@ int is_palindrome(listint_t **head)
 	listint_t *current;
 	int len;
 	int i;
+	 int list[10000];
 
 	current  = *head;
 	len = 0;
@@ -35,19 +36,16 @@ int is_palindrome(listint_t **head)
 		return (1);
 
 	current = *head;
-	i = 0;
-	int list[len];
-
 	while (current != NULL)
 	{
 		list[i] = current->n;
-		i++;
 		current = current->next;
+		i++;
 	}
 
 	for (i = 0; i < len / 2; i++)
 	{
-		if (list[i] != list[len - 1 - i])
+		if (list[i] != list[len - i - 1])
 		{
 			return (0);
 		}
