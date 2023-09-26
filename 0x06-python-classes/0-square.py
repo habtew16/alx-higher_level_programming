@@ -2,5 +2,5 @@
 class Square:
     pass
     """
-    sqaure class docs
+    creates a square class object
     """
