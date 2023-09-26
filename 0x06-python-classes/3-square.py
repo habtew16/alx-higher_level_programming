@@ -12,5 +12,12 @@ class Square:
         else:
             self.__size = size
 
+    """
+    method for area of the square
+    Args:
+    __size(int): size of the square
+    """
+
+
     def area(self):
         return(self.__size ** 2)
