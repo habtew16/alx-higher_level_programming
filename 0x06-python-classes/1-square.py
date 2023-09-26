@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"class square"
+
+
 class Square:
     """class square with private instanec"""
     def __init__(self, size):
