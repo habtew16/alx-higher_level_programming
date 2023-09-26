@@ -3,9 +3,14 @@
 
 
 class Square:
-    """class square with private instanec"""
+    """
+    class square with private instanec
+    
+    which has init function that
+    is called immediatly in object creation
+    """
 
-    "__init function"
+
     def __init__(self, size=0):
         if(type(size) is not int):
             raise TypeError("size must be an integer")
