@@ -3,7 +3,7 @@
 
 
 class Square:
-    """square class has method area to find area"""
+    "square class has method area to find area"
     def __init__(self, size=0):
         if type(size) is not int:
             raise TypeError("size must be an integer")
