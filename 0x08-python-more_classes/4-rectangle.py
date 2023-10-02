@@ -73,13 +73,6 @@ class Rectangle:
 
     """
     eval method that recreates new instance
-    when called
     """
     def __repr__(self):
-        return ("Rectangle({:d}, {:d})".format(self.width, self.height))
-
-    """
-    delete rectangle
-    """
-    def __del__(self):
-        print("Bye rectangle...")
+        return ("Rectangle({}, {})".format(self.width, self.height))
