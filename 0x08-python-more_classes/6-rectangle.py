@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 "Rectangle class"
+number_of_instances = 0
 
 
 class Rectangle:
@@ -10,6 +11,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     """
     width private data setter
