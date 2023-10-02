@@ -4,10 +4,11 @@
 
 
 class Rectangle:
-    number_of_instances = 0
     """
     this is rectangle class that does nothing
     """
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -75,7 +76,6 @@ class Rectangle:
 
     """
     eval method that recreates new instance
-    when called
     """
     def __repr__(self):
         return ("Rectangle({}, {})".format(self.width, self.height))
