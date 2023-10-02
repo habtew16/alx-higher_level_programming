@@ -2,6 +2,7 @@
 
 "Rectangle class"
 
+
 class Rectangle:
     """
     this is rectangle class that does nothing
