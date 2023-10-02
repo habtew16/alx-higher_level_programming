@@ -76,4 +76,4 @@ class Rectangle:
     when called
     """
     def __repr__(self):
-        return ("Reactangle({}, {})".format(self.width, self.height))
+        return ("Reactangle({:d}, {:d})".format(self.width, self.height))
