@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 "Rectangle class"
-number_of_instances = 0
 
 
 class Rectangle:
+    number_of_instances = 0
     """
     this is rectangle class that does nothing
     """
@@ -85,4 +85,4 @@ class Rectangle:
     """
     def __del__(self):
         Rectangle.number_of_instances -= 1
-        print("{}".fomrat("Bye rectangle..."))
+        print("{}".format("Bye rectangle..."))
