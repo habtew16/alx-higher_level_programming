@@ -77,3 +77,9 @@ class Rectangle:
     """
     def __repr__(self):
         return ("Reactangle({:d}, {:d})".format(self.width, self.height))
+
+    """
+    delete rectangle
+    """
+    def __del__(self):
+        print("Bye rectangle...")
