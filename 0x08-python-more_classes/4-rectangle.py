@@ -76,7 +76,7 @@ class Rectangle:
     when called
     """
     def __repr__(self):
-        return ("Reactangle({:d}, {:d})".format(self.width, self.height))
+        return ("Rectangle({:d}, {:d})".format(self.width, self.height))
 
     """
     delete rectangle
