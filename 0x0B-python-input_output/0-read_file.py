@@ -3,5 +3,5 @@ def read_file(filename=""):
     """
     function to write on file
     """
-    with open(filename) as f:
+    with open(filename, encoding="utf-8") as f:
         print(f.read())
