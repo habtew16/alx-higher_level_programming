@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""file handlin"""
+
+
 def read_file(filename=""):
     """
     function to write on file
