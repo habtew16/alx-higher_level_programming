@@ -19,3 +19,4 @@ TypeError: text must be a string
 2
 >>> text_indentation("hab")
 hab
+>>> text_indentation("")
