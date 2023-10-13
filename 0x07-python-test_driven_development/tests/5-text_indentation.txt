@@ -20,3 +20,10 @@ TypeError: text must be a string
 >>> text_indentation("hab")
 hab
 >>> text_indentation("")
+
+>>> text_indentation("hello\n\nmy name is\n\nhabtamu")
+hello
+<BLANKLINE>
+my name is
+<BLANKLINE>
+habtamu
