@@ -36,12 +36,12 @@ TypeError: m_b should contain only integers or floats
 >>> print(matrix_mul([[1,2],[1]],[[1,2]]))
 Traceback (most recent call last):
   ...
-TypeError: each row of m_a must should be of the same size
+TypeError: each row of m_a must be of the same size
 
 >>> print(matrix_mul([[1,2]],[[1,2],[1]]))
 Traceback (most recent call last):
   ...
-TypeError: each row of m_b must should be of the same size
+TypeError: each row of m_b must be of the same size
 
 >>> print(matrix_mul([[1,2]],[[1,2,3],[1,2,3]]))
 [[3, 6, 9]]
