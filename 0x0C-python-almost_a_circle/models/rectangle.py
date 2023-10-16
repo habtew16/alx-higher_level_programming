@@ -4,7 +4,9 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """init function for rectangle"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """creates private attributes and inherits from Base"""
         self.width = width
         self.height = height
         self.x = x

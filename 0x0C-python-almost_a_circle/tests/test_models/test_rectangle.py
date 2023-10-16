@@ -15,7 +15,7 @@ class TestRectangle(unittest.TestCase):
         self.r3 = Rectangle(10, 2, 0, 0, 12)
     def test_pep8(self):
         style = pep8.StyleGuide(quiet=True)
-        p = style.check_files(['models/rectangle.py', 'models/base.py'])
+        p = style.check_files(['models/base.py', 'models/rectangle.py', 'models/square.py'])
         self.assertEqual(p.total_errors, 0, "fix pep8")
 
     def test_ids(self):
@@ -57,7 +57,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r3.area(), 56)
 
     def test_display(self):
-        Base._Base__nb_objects = 0
         old_stdout = sys.stdout
         sys.stdout = mystdout = StringIO()
         r1 = Rectangle(4, 2)
@@ -71,7 +70,6 @@ class TestRectangle(unittest.TestCase):
         sys.stdout = old_stdout
 
     def test_str(self):
-        """tests strings"""
         Base._Base__nb_objects = 0
         r1 = Rectangle(4, 6, 2, 1, 12)
         self.assertEqual(r1.__str__(), "[Rectangle] (12) 2/1 - 4/6")
@@ -81,7 +79,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.__str__(), "[Rectangle] (2) 0/0 - 1/1")
 
     def test_update(self):
-        """tests update"""
         Base._Base__nb_objects = 0
         r1 = Rectangle(10, 10, 10, 10)
         r1_dictionary = r1.to_dictionary()
