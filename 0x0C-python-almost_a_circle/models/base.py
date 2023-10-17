@@ -9,6 +9,7 @@ class Base:
     """nb_objects is private attribute and
     init function useed to set id"""
     __nb_objects = 0
+
     def __init__(self, id=None):
         """set id passed by user
         if id is not None else set user"""
