@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-"""base class for the almost circle"""
+"""base class for the almost circle
+which has attributes"""
 import os
 import json
 
 
 class Base:
+    """nb_objects is private attribute and
+    init function useed to set id"""
     __nb_objects = 0
-    """init function"""
     def __init__(self, id=None):
-        """set id passed by user"""
+        """set id passed by user
+        if id is not None else set user"""
         if id is not None:
             self.id = id
         else:
