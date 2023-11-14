@@ -1,2 +1,2 @@
 -- describe table without using describe/explain
-DESC first_table
+SHOW CREATE TABLE first_table
