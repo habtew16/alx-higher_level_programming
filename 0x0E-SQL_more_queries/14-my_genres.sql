@@ -1,7 +1,7 @@
 -- 14-my_genres.sqlSELECT tgg.name FROM tv_genres AS tgg
-JOIN tv_show_genres AS name
-ON name.genre_id = tgg.id
-JOIN tv_shows AS ts
-ON ts.id = name.show_id
-WHERE ts.title='Dexter'
-GROUP BY tgg.name ASC;
+SELECT tv_genres.name
+FROM hbtn_0d_tvshows.tv_shows
+JOIN hbtn_0d_tvshows.tv_genres ON tv_shows.id = tv_genres.show_id
+WHERE tv_shows.title = 'Dexter'
+ORDER BY tv_genres.name ASC;
+
